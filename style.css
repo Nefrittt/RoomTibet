@@ -12,6 +12,7 @@
     width: 1180px;
     margin: auto;
 }
+
 @font-face {
     font-family: 'Nunito-sans';
     src: url(fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
@@ -19,6 +20,7 @@
     font-style: normal;
     font-size: 18px;
 }
+
 @font-face {
     font-family: 'Next-art';
     src: url(fonts/nextart/NEXT\ ART_Regular.otf);
@@ -26,6 +28,7 @@
     font-style: normal;
     font-size: 18px;
 }
+
 @font-face {
     font-family: 'Next-art-bold';
     src: url(fonts/nextart/NEXT\ ART_Bold.otf);
@@ -33,10 +36,13 @@
     font-style: normal;
     font-size: 18px;
 }
+
 body {
     font-family: 'Nunito-sans';
-    font-size: 18px; 
+    font-weight: 400;
+    font-size: 18px;
 }
+
 h1 {
     font-family: 'Next-art-bold';
     font-size: 50px;
@@ -44,6 +50,7 @@ h1 {
     line-height: 75px;
     color: var(--color-menu);
 }
+
 .btn {
     padding: 12px 24px;
     background-color: var(--color-btn);
@@ -51,19 +58,24 @@ h1 {
     border-radius: 4px;
     color: var(--color-menu);
 }
+
 .btn-white {
+    max-height: 52px;
+    padding: 15px 40px;
     background-color: var(--color-menu);
-    padding: 12px 40px;
-    color: black;
+    color: var(--color-btn);
+    font-weight: 700;
+    font-size: 16px;
 }
 
 /* Header */
 
 header {
     min-height: 985px;
-    background-image: url(images/mountain.jpg);
+    background-image: url(images/mountain-hd.jpg);
     background-repeat: no-repeat;
 }
+
 .header {
     display: flex;
     flex-direction: column;
@@ -92,16 +104,51 @@ header {
     text-decoration: none;
     font-weight: 600;
 }
+
 .header__info {
     display: flex;
     flex-direction: column;
+    gap: 40px;
+
 }
+
 .header__tour-programm {
     display: flex;
     justify-content: space-between;
+    /* gap: 24px; */
     padding: 40px 43px;
     background: rgba(255, 255, 255, 0.164);
     backdrop-filter: blur(6px);
     border-radius: 10px;
     border: 1px solid rgba(108, 105, 105, 0.568);
+}
+
+.dropdown-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dropdown-form input {
+    background: none;
+}
+
+.dropdown {
+    width: 270px;
+    margin-right: auto;
+    padding: 14px 16px;
+    background: url(images/arrowdown.svg) no-repeat right;
+    background-position-x: calc(100% - 8px);
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: #FDFDFD;
+    font-weight: 700;
+    font-size: 16px;
+    appearance: none;
+}
+
+.dropdown-form p {
+    color: var(--color-menu);
+    font-size: 14px;
 }
