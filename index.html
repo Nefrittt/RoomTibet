@@ -32,26 +32,27 @@
             <h1>Насладись прогулкой в горах <br> с командой единомышленников</h1>
             <div class="header__tour-programm">
                <form class="dropdown-form" action="">
-                  <select class="dropdown" name="" id="">
-                     <option value="" selected>Локация для тура</option>
-                     <option value="">Тибет</option>
-                     <option value="">Китай</option>
-                     <option value="">Тайланд</option>
-                  </select>
-                  <p>выбирете из списка</p>
-               </form>
-               <form class="dropdown-form" action="">
-                  <input class="dropdown" type="date">
-                  <p>укажите диапозон</p>
-               </form>
-               <form class="dropdown-form" action="">
-                  <select class="dropdown" name="" id="">
-                     <option value="" selected>Участники</option>
-                     <option value="">4 человека</option>
-                     <option value="">4-8</option>
-                     <option value="">Более 8</option>
-                  </select>
-                  <p>минимум 4 человека</p>
+                  <div class="dropdown-item">
+                     <select class="select" name="location" id="location-select">
+                        <option value="">Локация для тура</option>
+                        <option value="">Китай</option>
+                        <option value="">Тибет</option>
+                        <option value="">Англия</option>
+                     </select>
+                  </div>
+                  <div class="dropdown-item img-date">
+                     <select class="select " name="date" id="select-date">
+                        <option value="">Дата похода</option>
+                     </select>
+                  </div>
+                  <div class="dropdown-item">
+                     <select class="select" name="location" id="location-select">
+                        <option value="">Участники</option>
+                        <option value="">4-8</option>
+                        <option value="">8-12</option>
+                        <option value="">Более 12</option>
+                     </select>
+                  </div>
                </form>
                <a href="" class="btn btn-white">Найти программу</a>
             </div>
@@ -61,31 +62,36 @@
    <section class="intro">
       <div class="wrapper intro-gd">
          <div class="intro__videos">
-            <img class="alone-mountain" src="images/alone-mountain.jpg" alt="">
-            <img class="alone-home" src="images/alone-home.jpg" alt="">
+            <div class="alone-mountain">
+            </div>
+            <div class="alone-home">
+               <a href="#"><img src="images/play-video.svg" alt=""></a>
+            </div>
          </div>
          <div class="intro__info">
-            <div class="title">
-               <h4>о нашем походе</h4>
+            <div class="title section-info-item">
+               <span>о нашем походе</span>
                <h2>Исследуйте все горные массивы мира вместе с нами</h2>
             </div>
-            <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
+            <p class="section-info-item">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть
+               более двух тысячелетий назад.
                Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых
                странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.</p>
-            <a href="" class="btn">Программа тура</a>
+            <a href="#" class="btn">Программа тура</a>
          </div>
       </div>
    </section>
    <section class="programs">
       <div class="wrapper programs-df">
          <div class="programs__info">
-            <div class="title">
-               <h4>наше предложение</h4>
+            <div class="title section-info-item">
+               <span>наше предложение</span>
                <h2>Лучшие программы для тебя</h2>
             </div>
-            <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
+            <p class="section-info-item">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть
+               более двух тысячелетий назад.
                Ричард МакКлинток, профессор латыни из колледжа.</p>
-            <div class="programs__item">
+            <div class="programs__item section-info-item">
                <img src="images/people-icon.svg" alt="">
                <div class="item__article">
                   <h3>Опытный гид</h3>
@@ -93,7 +99,7 @@
                      соответствующих условий активизации.</p>
                </div>
             </div>
-            <div class="programs__item">
+            <div class="programs__item section-info-item">
                <img src="images/shield-icon.svg" alt="">
                <div class="item__article">
                   <h3>Безопасный поход</h3>
@@ -101,7 +107,7 @@
                      соответствующих условий активизации.</p>
                </div>
             </div>
-            <div class="programs__item">
+            <div class="programs__item section-info-item">
                <img src="images/sale-icon.svg" alt="">
                <div class="item__article">
                   <h3>Лояльные цены</h3>
@@ -113,17 +119,17 @@
             <a href="" class="btn">Стоимость программ</a>
          </div>
          <div class="programs__pictures">
-            <img class="squircle_left" src="images/tea-in-hills.jpg" alt="">
-            <img class="squircle_right" src="images/man-in-canyon.jpg" alt="">
-            <img class="squircle_right" src="images/snowmobile.jpg" alt="">
-            <img class="squircle_left" src="images/stream.jpg" alt="">
+            <img class="picture__item" src="images/tea-in-hills.jpg" alt="">
+            <img class="picture__item" src="images/man-in-canyon.jpg" alt="">
+            <img class="picture__item" src="images/snowmobile.jpg" alt="">
+            <img class="picture__item" src="images/stream.jpg" alt="">
          </div>
       </div>
    </section>
    <section class="popular">
       <div class="wrapper popular-pos">
-         <div class="popular__title">
-            <h4>по версии отдыхающих</h4>
+         <div class="popular__title title">
+            <span>по версии отдыхающих</span>
             <h2>Популярные направления</h2>
          </div>
          <div class="popular__cards">
@@ -174,6 +180,126 @@
             </div>
          </div>
          <a href="#" class="btn">Рейтинг направлений</a>
+      </div>
+   </section>
+   <section class="blog">
+      <div class="wrapper">
+         <div class="title">
+            <span>делимся впечатлениями</span>
+            <h2>Блог о путешествиях</h2>
+         </div>
+         <div class="blog__container">
+            <div class="blog__item">
+               <div class="blog__picture">
+                  <img src="images/blog/italy.jpg" alt="italy">
+               </div>
+               <div class="blog__info">
+                  <div class="blog__info__head">
+                     <h3>Красивая Италия, какая она в реальности?</h3>
+                     <p>Для современного мира базовый вектор развития предполагает независимые способы реализации
+                        соответствующих условий активизации.</p>
+                  </div>
+                  <div class="blog__info__foot">
+                     <span>01/04/2023</span>
+                     <a href="#">читать статью</a>
+                  </div>
+               </div>
+            </div>
+            <div class="blog__item">
+               <div class="blog__picture">
+                  <img src="images/blog/airplanes.jpg" alt="airplanes">
+               </div>
+               <div class="blog__info">
+                  <div class="blog__info__head">
+                     <h3>Долой сомнения! Весь мир открыт для вас!</h3>
+                     <p>Для современного мира базовый вектор развития предполагает независимые способы реализации
+                        соответствующих условий активизации ... независимые способы реализации соответствующих условий
+                        активизации</p>
+                  </div>
+                  <div class="blog__info__foot">
+                     <span>01/04/2023</span>
+                     <a href="#">читать статью</a>
+                  </div>
+               </div>
+            </div>
+            <div class="blog__item">
+               <div class="blog__picture">
+                  <img src="images/blog/man-on-road.jpg" alt="italy">
+               </div>
+               <div class="blog__info">
+                  <div class="blog__info__head">
+                     <h3>Как подготовиться к путешествию в одиночку?</h3>
+                     <p>Для современного мира базовый вектор развития предполагает.</p>
+                  </div>
+                  <div class="blog__info__foot">
+                     <span>01/04/2023</span>
+                     <a href="#">читать статью</a>
+                  </div>
+               </div>
+            </div>
+            <div class="blog__item">
+               <div class="blog__picture">
+                  <img src="images/blog/india.jpg" alt="italy">
+               </div>
+               <div class="blog__info">
+                  <div class="blog__info__head">
+                     <h3>Индия ... летим?</h3>
+                     <p>Для современного мира базовый.</p>
+                  </div>
+                  <div class="blog__info__foot">
+                     <span>01/04/2023</span>
+                     <a href="#">читать статью</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="link-cont">
+            <a href="#" class="btn">Другие материалы</a>
+         </div>
+      </div>
+   </section>
+   <section class="pinterest">
+      <div class="wrapper">
+         <div class="title">
+            <span>фото-отчет</span>
+            <h2>Делимся впечатлениями</h2>
+         </div>
+         <div class="pinterest__photo__collection">
+            <div class="first-row">
+               <div class="photo-item x2">
+                  <a class="pinterest__link" href="#">
+                     <img src="images/pinterest/air-balls.jpg" alt="">
+                  </a>
+               </div>
+               <div class="photo-item x1">
+                  <a class="pinterest__link" href="#">
+                     <img src="images/pinterest/map.jpg" alt="">
+                  </a>
+               </div>
+               <div class="photo-item x1">
+                  <a class="pinterest__link" href="#">
+                     <img src="images/pinterest/dubai.jpg" alt="">
+                  </a>
+               </div>
+            </div>
+            <div class="second-row">
+               <div class="photo-item x1">
+                  <a class="pinterest__link" href="#">
+                     <img src="images/pinterest/beach.jpg" alt="">
+                  </a>
+               </div>
+               <div class="photo-item x2">
+                  <a class="pinterest__link" href="#">
+                     <img src="images/pinterest/canyon.jpg" alt="">
+                  </a>
+               </div>
+               <div class="photo-item x1">
+                  <a class="pinterest__link" href="#">
+                     <img src="images/pinterest/jorney.jpg" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
       </div>
    </section>
    <footer>
