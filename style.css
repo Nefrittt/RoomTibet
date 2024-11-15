@@ -14,9 +14,13 @@
 
 .wrapper {
     width: 1180px;
-    margin: auto;
+    margin: 0 auto;
 }
 
+.email-cont {
+    width: 1210px;
+    margin: 0 auto;
+}
 
 @font-face {
     font-family: 'Next-art-bold';
@@ -57,6 +61,24 @@ p {
     color: var(--color-yellow);
 }
 
+.intro .btn:hover,
+.programs .btn:hover,
+.popular .btn:hover,
+.blog .btn:hover,
+.pinterest .btn:hover,
+.email .btn:hover {
+    background-color: var(--color-yellow);
+    color: black;
+}
+
+.intro .btn,
+.programs .btn,
+.popular .btn,
+.blog .btn,
+.pinterest .btn,
+.email .btn {
+    padding: 16px 36px;
+}
 
 .section-info-item {
     margin-bottom: 40px;
@@ -71,6 +93,7 @@ p {
     border-radius: 4px;
     font-size: 16px;
     font-weight: 600;
+    line-height: 20px;
     transition: all 0.4s ease-in-out;
 }
 
@@ -310,11 +333,6 @@ header {
     margin: 40px 0;
 }
 
-.programs .btn:hover {
-    background-color: var(--color-yellow);
-    color: black;
-}
-
 .picture__item:first-child,
 .picture__item:last-child {
     border-top-right-radius: 50px;
@@ -376,11 +394,6 @@ header {
     font-size: 14px;
 }
 
-.popular .btn:hover {
-    background-color: var(--color-yellow);
-    color: black;
-}
-
 .price-info-title {
     text-align: left;
 }
@@ -432,11 +445,6 @@ header {
     margin-top: 50px;
 }
 
-.blog .btn:hover {
-    background-color: var(--color-yellow);
-    color: black;
-}
-
 .blog__container {
     display: grid;
     grid-template-columns: repeat(2, 580px);
@@ -448,6 +456,10 @@ header {
     gap: 24px;
     padding: 16px;
     background-color: #fff;
+}
+
+.blog__item:hover {
+    cursor: url(images/green-pointer.svg) 2 2, default;
 }
 
 .blog__picture {
@@ -503,15 +515,20 @@ header {
 }
 
 /* Pinterest */
+.pinterest {
+    padding-top: 80px;
+}
 
 .pinterest .title {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .pinterest__photo__collection {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 50px;
 }
 
 .first-row {
@@ -524,6 +541,56 @@ header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 20px;
+}
+
+.pinterest__link img {
+    border-radius: 6px;
+    transition: transform 1s;
+}
+
+.pinterest__link img:hover {
+    transform: scale(1.1);
+}
+
+.pinterest__link:hover {
+    cursor: url(images/hand-pointer.svg) 2 2, default;
+}
+
+
+
+/* Email */
+
+.email {
+    position: relative;
+    top: 98px;
+    background-color: #fff;
+    padding: 40px 100px;
+    border-radius: 6px;
+    box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
+}
+
+.email__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.subscription {
+    display: flex;
+}
+
+.subscription .btn {
+    padding: 16px 36px;
+}
+
+.email .title span {
+    margin-bottom: 10px;
+}
+
+.email .title h2 {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 120%;
 }
 
 
@@ -554,7 +621,7 @@ footer a {
 .footer {
     display: grid;
     grid-template-columns: 5fr 4fr 3fr;
-    padding: 80px 0;
+    padding: 180px 0 80px 0;
 }
 
 .information {
