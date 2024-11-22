@@ -133,51 +133,57 @@
             <h2>Популярные направления</h2>
          </div>
          <div class="popular__cards">
-            <div class="card lake-img">
-               <div class="rating">
-                  <img src="images/rating-star.svg" alt="">
-                  <span>4.9</span>
-               </div>
-               <div class="price-info matte">
-                  <div class="price-info-title">
-                     <h2>Озеро возле гор</h2>
-                     <p>романтическое приключение</p>
+            <a href="#" class="reset-link">
+               <div class="card lake-img">
+                  <div class="rating">
+                     <img src="images/rating-star.svg" alt="">
+                     <span>4.9</span>
                   </div>
-                  <div class="price">
-                     480 $
-                  </div>
-               </div>
-            </div>
-            <div class="card night-skye-img">
-               <div class="rating">
-                  <img src="images/rating-star.svg" alt="">
-                  <span>4.5</span>
-               </div>
-               <div class="price-info matte">
-                  <div class="price-info-title">
-                     <h2>Ночь в горах</h2>
-                     <p>в компании друзей</p>
-                  </div>
-                  <div class="price">
-                     500 $
+                  <div class="price-info matte">
+                     <div class="price-info-title">
+                        <h2>Озеро возле гор</h2>
+                        <p>романтическое приключение</p>
+                     </div>
+                     <div class="price">
+                        480 $
+                     </div>
                   </div>
                </div>
-            </div>
-            <div class="card yoga-img">
-               <div class="rating">
-                  <img src="images/rating-star.svg" alt="">
-                  <span>5.0</span>
-               </div>
-               <div class="price-info matte">
-                  <div class="price-info-title">
-                     <h2>Йога в горах</h2>
-                     <p>для тех, кто забоится о себе</p>
+            </a>
+            <a href="#" class="reset-link">
+               <div class="card night-skye-img">
+                  <div class="rating">
+                     <img src="images/rating-star.svg" alt="">
+                     <span>4.5</span>
                   </div>
-                  <div class="price">
-                     230 $
+                  <div class="price-info matte">
+                     <div class="price-info-title">
+                        <h2>Ночь в горах</h2>
+                        <p>в компании друзей</p>
+                     </div>
+                     <div class="price">
+                        500 $
+                     </div>
                   </div>
                </div>
-            </div>
+            </a>
+            <a href="#" class="reset-link">
+               <div class="card yoga-img">
+                  <div class="rating">
+                     <img src="images/rating-star.svg" alt="">
+                     <span>5.0</span>
+                  </div>
+                  <div class="price-info matte">
+                     <div class="price-info-title">
+                        <h2>Йога в горах</h2>
+                        <p>для тех, кто забоится о себе</p>
+                     </div>
+                     <div class="price">
+                        230 $
+                     </div>
+                  </div>
+               </div>
+            </a>
          </div>
          <a href="#" class="btn">Рейтинг направлений</a>
       </div>
@@ -265,40 +271,37 @@
             <h2>Делимся впечатлениями</h2>
          </div>
          <div class="pinterest__photo__collection">
-            <div class="first-row">
-               <div class="photo-item x2">
-                  <a class="pinterest__link" href="#">
-                     <img src="images/pinterest/air-balls.jpg" alt="">
-                  </a>
-               </div>
-               <div class="photo-item x1">
-                  <a class="pinterest__link" href="#">
-                     <img src="images/pinterest/map.jpg" alt="">
-                  </a>
-               </div>
-               <div class="photo-item x1">
-                  <a class="pinterest__link" href="#">
-                     <img src="images/pinterest/dubai.jpg" alt="">
-                  </a>
-               </div>
+            <div class="photo-item">
+               <a class="pinterest__link" href="#">
+                  <img src="images/pinterest/air-balls.jpg" alt="">
+               </a>
             </div>
-            <div class="second-row">
-               <div class="photo-item x1">
-                  <a class="pinterest__link" href="#">
-                     <img src="images/pinterest/beach.jpg" alt="">
-                  </a>
-               </div>
-               <div class="photo-item x2">
-                  <a class="pinterest__link" href="#">
-                     <img src="images/pinterest/canyon.jpg" alt="">
-                  </a>
-               </div>
-               <div class="photo-item x1">
-                  <a class="pinterest__link" href="#">
-                     <img src="images/pinterest/jorney.jpg" alt="">
-                  </a>
-               </div>
+            <div class="photo-item">
+               <a class="pinterest__link" href="#">
+                  <img src="images/pinterest/map.jpg" alt="">
+               </a>
             </div>
+            <div class="photo-item">
+               <a class="pinterest__link" href="#">
+                  <img src="images/pinterest/dubai.jpg" alt="">
+               </a>
+            </div>
+            <div class="photo-item">
+               <a class="pinterest__link" href="#">
+                  <img src="images/pinterest/beach.jpg" alt="">
+               </a>
+            </div>
+            <div class="photo-item">
+               <a class="pinterest__link" href="#">
+                  <img src="images/pinterest/canyon.jpg" alt="">
+               </a>
+            </div>
+            <div class="photo-item">
+               <a class="pinterest__link" href="#">
+                  <img src="images/pinterest/jorney.jpg" alt="">
+               </a>
+            </div>
+
          </div>
          <div class="link-cont">
             <a href="#" class="btn">Наш pinterest</a>
@@ -313,10 +316,16 @@
          </div>
          <div class="subscription">
             <form action="" class="subscribe__form">
-               <label for="">Введите e-mail адрес</label>
-               <input type="email" placeholder="name@domain.com" name="" id="">
+               <label for="">
+                  Введите e-mail адрес
+                  <input type="email" placeholder="name@domain.com" name="" id="">
+               </label>
+               <button type="submit" class="btn">Подписаться на новости</button>
             </form>
-            <button class="btn">Подписаться на новости</button>
+            <p>подписываясь на новости, вы автоматически соглашаетесь <a href="">с условиями обработки персональных
+                  данных</a> и
+               <a href="">правилами рекламных рассылок</a>
+            </p>
          </div>
       </div>
    </section>
